@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WRPAdviseViewController">
+            <connections>
+                <outlet property="messageTextField" destination="JUc-6h-PbC" id="bAm-m7-MVJ"/>
+                <outlet property="sendButton" destination="YbK-Pg-FCa" id="Ag2-er-SbB"/>
+                <outlet property="titleLabel" destination="ktU-Ae-Qwb" id="awK-ST-CNw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请留下宝贵意见：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktU-Ae-Qwb">
+                    <rect key="frame" x="10" y="80" width="150" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3Ld-PS-mjN"/>
+                        <constraint firstAttribute="width" constant="150" id="fMT-uC-fep"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="在此填写您的吐槽。。。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JUc-6h-PbC">
+                    <rect key="frame" x="10" y="120" width="355" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="atG-Wh-waa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbK-Pg-FCa">
+                    <rect key="frame" x="50" y="437" width="260" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="TAj-Tz-cUQ"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="c9R-Kp-aMc"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="ccy-Ht-dxP"/>
+                        <constraint firstAttribute="height" constant="30" id="qtT-i9-Hkm"/>
+                    </constraints>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="c9R-Kp-aMc"/>
+                            <exclude reference="ccy-Ht-dxP"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="sendMessage:" destination="-1" eventType="touchUpInside" id="kkU-oZ-OGr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JUc-6h-PbC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="EQ7-7m-exe"/>
+                <constraint firstAttribute="bottom" secondItem="YbK-Pg-FCa" secondAttribute="bottom" constant="200" id="FfR-wH-5pq"/>
+                <constraint firstAttribute="trailing" secondItem="YbK-Pg-FCa" secondAttribute="trailing" id="H30-3E-nCf"/>
+                <constraint firstItem="YbK-Pg-FCa" firstAttribute="top" secondItem="JUc-6h-PbC" secondAttribute="bottom" constant="77" id="KJ1-l7-yXU"/>
+                <constraint firstAttribute="trailing" secondItem="JUc-6h-PbC" secondAttribute="trailing" constant="10" id="SKR-np-5nZ"/>
+                <constraint firstAttribute="trailing" secondItem="YbK-Pg-FCa" secondAttribute="trailing" id="Zau-DY-ZS9"/>
+                <constraint firstItem="ktU-Ae-Qwb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="fpb-H8-Qdl"/>
+                <constraint firstItem="YbK-Pg-FCa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="lwS-Dl-Sx4"/>
+                <constraint firstItem="ktU-Ae-Qwb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="m73-Y2-eQU"/>
+                <constraint firstItem="JUc-6h-PbC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="qQh-M0-vlg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="H30-3E-nCf"/>
+                    <exclude reference="Zau-DY-ZS9"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="307.5" y="383.5"/>
+        </view>
+    </objects>
+</document>
